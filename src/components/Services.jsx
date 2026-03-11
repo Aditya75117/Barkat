@@ -12,19 +12,19 @@ export default function Services() {
     <section id="services" className="services-wrapper">
       <div className="container reveal">
         <div className="services-header">
-          <span className="label text-gold" style={{ marginBottom: '1rem', display: 'block' }}>What We Do</span>
-          <h2>Our Services</h2>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem' }}>
+          <span className="label text-gold services-header-label">What We Do</span>
+          <h2 className="services-header-title">Our Services</h2>
+          <p className="services-header-desc">
             From intimate gatherings to grand celebrations — we make every moment extraordinary.
           </p>
         </div>
-        <div className="services-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+        <div className="services-grid">
           {services.map((s, i) => (
             <div key={i} className="service-card">
               <div className="service-content">
                 <span className="service-icon">{s.icon}</span>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
+                <h3 className="service-card-title">{s.title}</h3>
+                <p className="service-card-desc">{s.desc}</p>
               </div>
             </div>
           ))}

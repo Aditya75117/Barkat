@@ -26,15 +26,15 @@ export default function Testimonials() {
   return (
     <section className="testimonials-section">
       <div className="container reveal">
-        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
-          <span className="label" style={{ color: 'var(--clr-purple-light)', display: 'block', marginBottom: '1rem' }}>Client Love</span>
-          <h2 style={{ fontSize: '3rem', color: 'var(--clr-black)' }}>What Our Clients Say</h2>
+        <div className="testimonials-header">
+          <span className="label testimonials-header-label">Client Love</span>
+          <h2 className="testimonials-header-title">What Our Clients Say</h2>
         </div>
         <div className="testimonials-grid">
           {testimonials.map((t, i) => (
             <div key={i} className="testimonial-card">
               <div className="stars">{t.stars}</div>
-              <p>{t.quote}</p>
+              <p className="testimonial-card-quote">{t.quote}</p>
               <div className="testimonial-author">
                 <div className="author-avatar">{t.initial}</div>
                 <div>

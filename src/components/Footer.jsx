@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="footer-logo">BARKAT</div>
-        <p style={{ fontFamily: 'var(--font-sans)', color: 'rgba(255,255,255,0.6)', maxWidth: '400px', margin: '0 auto' }}>
+        <p className="footer-tagline">
           Creating unforgettable events that celebrate life&apos;s most precious moments. Your vision, our expertise.
         </p>
         <div className="footer-social">

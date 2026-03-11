@@ -11,16 +11,16 @@ export default function WhyChoose() {
   return (
     <div className="why-section">
       <div className="container reveal">
-        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
-          <span className="label" style={{ color: 'var(--clr-purple-light)', display: 'block', marginBottom: '1rem' }}>Why Us</span>
-          <h2 style={{ fontSize: '3rem', color: 'var(--clr-black)' }}>Why Choose Barkat?</h2>
+        <div className="why-section-header">
+          <span className="label why-section-header-label">Why Us</span>
+          <h2 className="why-section-header-title">Why Choose Barkat?</h2>
         </div>
         <div className="why-grid">
           {reasons.map((r, i) => (
             <div key={i} className="why-card">
               <div className="why-icon">{r.icon}</div>
-              <h4>{r.title}</h4>
-              <p>{r.desc}</p>
+              <h4 className="why-card-title">{r.title}</h4>
+              <p className="why-card-desc">{r.desc}</p>
             </div>
           ))}
         </div>

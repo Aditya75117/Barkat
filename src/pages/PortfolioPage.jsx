@@ -32,9 +32,9 @@ export default function PortfolioPage() {
       <Nav scrolled={true} />
       <header className="portfolio-page-header">
         <div className="container">
-          <span className="label text-gold" style={{ marginBottom: '1rem', display: 'block' }}>Our Archive</span>
-          <h1>The Portfolio</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+          <span className="label text-gold portfolio-page-header-label">Our Archive</span>
+          <h1 className="portfolio-page-header-title">The Portfolio</h1>
+          <p className="portfolio-page-header-desc">
             Explore our gallery of masterfully crafted events, where every detail tells a unique story of elegance and celebration.
           </p>
         </div>

@@ -9,8 +9,8 @@ export default function Contact() {
         <div className="contact-grid">
           <div className="contact-info">
             <span className="label section-label">Inquire</span>
-            <h2>Begin the Conversation.</h2>
-            <p style={{ color: 'var(--clr-gray)', fontSize: '1.1rem', maxWidth: '400px' }}>
+            <h2 className="contact-info-title">Begin the Conversation.</h2>
+            <p className="contact-info-desc">
               We accept a limited number of commissions annually to ensure our uncompromising standards are met for every client.
             </p>
             <div className="contact-details">
@@ -42,11 +42,11 @@ export default function Contact() {
                 <input type="text" id="event-type" required />
                 <label htmlFor="event-type">Event Type & Expected Date</label>
               </div>
-              <div className="form-group" style={{ marginBottom: '3rem' }}>
+              <div className="form-group">
                 <textarea id="message" rows={3} required />
                 <label htmlFor="message">Details of your vision</label>
               </div>
-              <button type="submit" className="btn btn-black" style={{ width: '100%', fontSize: '1rem', padding: '1.2rem' }}>Submit Inquiry</button>
+              <button type="submit" className="btn btn-black">Submit Inquiry</button>
             </form>
           </div>
         </div>

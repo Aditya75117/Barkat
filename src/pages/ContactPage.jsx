@@ -57,7 +57,7 @@ export default function ContactPage() {
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-gold" style={{ width: '100%', padding: '1.2rem', fontSize: '1rem', marginTop: '10px' }}>
+                <button type="submit" className="btn btn-gold contact-page-submit-btn">
                   Submit Inquiry
                 </button>
               </form>
@@ -106,7 +106,7 @@ export default function ContactPage() {
       <footer className="contact-page-footer">
         <div className="container">
           <div className="footer-logo">BARKAT</div>
-          <p style={{ opacity: 0.6, marginBottom: '2rem' }}>Crafting the world&apos;s most exquisite celebrations.</p>
+          <p className="contact-page-footer-tagline">Crafting the world&apos;s most exquisite celebrations.</p>
           <div className="footer-copy">© 2024 BARKAT EVENT MANAGEMENT. ALL RIGHTS RESERVED.</div>
         </div>
       </footer>

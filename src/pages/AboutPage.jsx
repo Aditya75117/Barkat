@@ -43,7 +43,7 @@ export default function AboutPage() {
       <Nav scrolled={true} />
       <header className="about-hero">
         <div className="container reveal active">
-          <span className="label" style={{ color: 'var(--clr-gold-light)', marginBottom: '1.5rem', display: 'block' }}>Company Story</span>
+          <span className="label about-hero-label">Company Story</span>
           <h1 className="about-hero-title">
             Who is<br />
             <span className="text-gold">Barkat?</span>
@@ -59,20 +59,20 @@ export default function AboutPage() {
                 <img
                   src="https://images.pexels.com/photos/1123262/pexels-photo-1123262.jpeg?auto=compress&cs=tinysrgb&w=1200"
                   alt="Planning Session"
-                  style={{ width: '100%', borderRadius: 'var(--radius-large)' }}
+                  className="mission-image-img"
                 />
               </div>
               <div className="mission-content">
-                <span className="label" style={{ color: 'var(--clr-purple-light)', marginBottom: '1rem', display: 'block' }}>Who We Are</span>
-                <h2>The Story Behind Barkat.</h2>
-                <p>
+                <span className="label mission-content-label">Who We Are</span>
+                <h2 className="mission-content-title">The Story Behind Barkat.</h2>
+                <p className="mission-content-text">
                   Barkat Event Management was born from a simple but powerful conviction — that every celebration deserves to be extraordinary. Founded over a decade ago, we have grown from a boutique wedding studio into one of the region&apos;s most trusted names in luxury event production.
                 </p>
-                <p>
+                <p className="mission-content-text">
                   We are storytellers, designers, and orchestrators. Our team blends cultural sensitivity with contemporary vision to create events that feel deeply personal and visually breathtaking. From an intimate family gathering to a grand corporate summit, Barkat brings passion to every detail.
                 </p>
-                <div style={{ marginTop: '2rem' }}>
-                  <a href="/contact" className="btn btn-black" style={{ background: 'var(--clr-deep)', color: 'white' }}>Meet the Visionaries</a>
+                <div className="mission-cta-wrap">
+                  <a href="/contact" className="btn btn-black btn-visionaries">Meet the Visionaries</a>
                 </div>
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function AboutPage() {
 
         <section className="values-section">
           <div className="container reveal">
-            <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 4rem' }}>
-              <span className="label" style={{ color: 'var(--clr-purple-light)', marginBottom: '1rem', display: 'block' }}>Our Mission</span>
-              <h2 style={{ fontSize: '3rem' }}>Deliver Memorable Experiences</h2>
-              <p style={{ color: 'var(--clr-gray)', fontSize: '1.1rem', lineHeight: '1.8', marginTop: '1rem' }}>
+            <div className="values-section-header">
+              <span className="label values-section-header-label">Our Mission</span>
+              <h2 className="values-section-header-title">Deliver Memorable Experiences</h2>
+              <p className="values-section-header-desc">
                 Our mission is to deliver memorable experiences through creativity and precision — where every detail is intentional, every moment is curated, and every event becomes a cherished memory.
               </p>
             </div>
@@ -102,10 +102,10 @@ export default function AboutPage() {
 
         <section className="team-section">
           <div className="container reveal">
-            <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 4rem' }}>
-              <span className="label" style={{ color: 'var(--clr-purple-light)', marginBottom: '1rem', display: 'block' }}>Our Team</span>
-              <h2 style={{ fontSize: '3rem' }}>The People Behind the Magic</h2>
-              <p style={{ color: 'var(--clr-gray)', fontSize: '1.05rem', lineHeight: '1.8', marginTop: '1rem' }}>
+            <div className="team-section-header">
+              <span className="label team-section-header-label">Our Team</span>
+              <h2 className="team-section-header-title">The People Behind the Magic</h2>
+              <p className="team-section-header-desc">
                 Our diverse team of event specialists, designers, and coordinators share one common trait — an obsession with making your event perfect.
               </p>
             </div>
@@ -125,9 +125,9 @@ export default function AboutPage() {
 
         <section className="timeline-section">
           <div className="container reveal">
-            <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
-              <span className="label" style={{ color: 'var(--clr-gold-light)', marginBottom: '1rem', display: 'block' }}>By the Numbers</span>
-              <h2 style={{ fontSize: '3rem', color: 'white' }}>Our Achievements</h2>
+            <div className="timeline-section-header">
+              <span className="label timeline-section-header-label">By the Numbers</span>
+              <h2 className="timeline-section-header-title">Our Achievements</h2>
             </div>
             <div className="about-stats-grid">
               {stats.map((s, i) => (
@@ -143,19 +143,19 @@ export default function AboutPage() {
 
         <section className="final-cta">
           <div className="container reveal">
-            <h2 style={{ fontSize: '4rem', marginBottom: '2rem' }}>Join the Legacy.</h2>
-            <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto 3rem', fontSize: '1.2rem' }}>
+            <h2 className="final-cta-title">Join the Legacy.</h2>
+            <p className="final-cta-desc">
               Your story deserves a stage as grand as your vision. Let&apos;s create something timeless together.
             </p>
-            <a href="/contact" className="btn btn-gold" style={{ fontSize: '1.1rem', padding: '1.2rem 3rem' }}>Start Your Journey</a>
+            <a href="/contact" className="btn btn-gold final-cta-btn">Start Your Journey</a>
           </div>
         </section>
       </main>
 
       <footer className="footer-minimal">
         <div className="container">
-          <div className="nav-logo" style={{ marginBottom: '1rem', color: 'var(--clr-gold-mid)' }}>BARKAT</div>
-          <p className="footer-copy" style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '0.1em' }}>© 2024 BARKAT EVENT MANAGEMENT. ALL RIGHTS RESERVED.</p>
+          <div className="nav-logo footer-minimal-logo">BARKAT</div>
+          <p className="footer-copy footer-minimal-copy">© 2024 BARKAT EVENT MANAGEMENT. ALL RIGHTS RESERVED.</p>
         </div>
       </footer>
     </>

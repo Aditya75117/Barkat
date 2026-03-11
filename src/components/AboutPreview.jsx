@@ -35,7 +35,7 @@ export default function AboutPreview() {
               <span className="label">Happy Clients</span>
             </div>
           </div>
-          <a href="#about-full" className="btn btn-black" style={{ marginTop: '2.5rem' }}>Learn More</a>
+          <a href="#about-full" className="btn btn-black">Learn More</a>
         </div>
       </div>
     </div>

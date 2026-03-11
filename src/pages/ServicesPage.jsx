@@ -89,7 +89,7 @@ export default function ServicesPage() {
         <div className="header-content">
           <span className="label">Our Expertise</span>
           <h1>Curated <span className="text-gold">Service Tiers</span></h1>
-          <p style={{ opacity: 0.8, lineHeight: 1.7 }}>
+          <p className="services-page-header-desc">
             From boutique celebrations to global corporate gatherings, we provide scalable solutions tailored to the most discerning visions.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
           <div className="service-stack-card-container reveal">
             <div className="service-stack-card">
               <div className="service-stack-meta">
-                <span className={`label ${stack.labelGold ? 'text-gold' : ''}`} style={!stack.labelGold ? { color: 'var(--clr-purple-light)' } : {}}>
+                <span className={`label ${stack.labelGold ? 'text-gold' : 'label-purple'}`}>
                   {stack.label}
                 </span>
                 <h2>{stack.title}</h2>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
 
       <footer className="footer-services">
         <div className="container">
-          <span className="nav-logo" style={{ marginBottom: '2rem', display: 'block' }}>BARKAT</span>
+          <span className="nav-logo footer-services-logo">BARKAT</span>
           <p className="footer-copy">© 2024 BARKAT EVENT MANAGEMENT. ALL RIGHTS RESERVED.</p>
         </div>
       </footer>

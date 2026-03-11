@@ -17,7 +17,7 @@ export default function Nav({ scrolled }) {
         <Link to="/portfolio" className={isPortfolio ? 'nav-link-active' : ''}>Portfolio</Link>
         <Link to="/contact" className={isContact ? 'nav-link-active' : ''}>Inquire</Link>
       </div>
-      <Link to="/contact" className="btn btn-gold" style={{ padding: '0.6rem 1.5rem' }}>Book Consultation</Link>
+      <Link to="/contact" className="btn btn-gold nav-cta-btn">Book Consultation</Link>
     </nav>
   );
 }
